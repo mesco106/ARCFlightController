@@ -3,4 +3,4 @@ Research project to develop a flight controller capable of autonomous flight for
 
 
 Research Engineer
--Manuel Escobar
+-Manuel Escobar B.S.
