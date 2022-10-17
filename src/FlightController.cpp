@@ -1,21 +1,18 @@
 #include <Arduino.h>
-#include "Classtest.h"
-#include "ExtraClass.h"
+#include "State.h"
 
-#define LED_BUILDIN PC13
-// Class      Object
-LED_Controls LED;
-ExtraExtra test;
-
+#define INBUILD_PIN PC13
 void setup() {
-  // LED.Begin(LED_BUILTIN);
+  Serial.begin(9600);
+  pinMode(INBUILD_PIN, OUTPUT);
 }
 
 void loop() {
-  
-  // LED.ON(LED_BUILTIN);
-  // delay(1000);
-  // LED.OFF(LED_BUILTIN);
-  // delay(1000);
-  // LED.flash(LED_BUILTIN,100,10);
+  State.FUNCTION1();
+  State.FUNCTION2(1);
+  Serial.println("Blinkind LED...");
+  digitalWrite(INBUILD_PIN, HIGH);
+  delay(1000);
+  digitalWrite(INBUILD_PIN, LOW);
+  delay(1000);
 }
