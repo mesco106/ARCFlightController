@@ -1,14 +1,25 @@
 #ifndef State_h
 #define State_h
 
-class printer
+class Printer
 {
     public:
-        printer();
-        void FUNCTION1();
-        void FUNCTION2(int i);
+        /**
+         * constructor
+        */
+        Printer();
+        /**
+         * This is a function that will do x
+         * 
+        */
+        static void FUNCTION1();
+        /**
+         * @param i is an integer 
+         * @return void 
+        */
+        static void FUNCTION2(int i);
 };
 
-extern printer State;
+// extern Printer State;
 
 #endif

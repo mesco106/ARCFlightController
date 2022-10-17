@@ -3,18 +3,18 @@
 
 const uint8_t counter = 1;
 
-printer::printer(){    
+Printer::Printer(){    
 }
 
-void printer::FUNCTION1(){
+void Printer::FUNCTION1(){
     Serial.println("Function 1 executing...");
     delay(500);
 }
 
-void printer::FUNCTION2(int value){
+void Printer::FUNCTION2(int value){
     Serial.println("Function 2 executing...");
     delay(500);
     value++;
 }
 
-printer State = printer();
+Printer State = Printer();
